@@ -1,0 +1,32 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build-client && node ./",
+    "dev": "nodemon ./",
+    "dev-client": "parcel client/src/index.html",
+    "build-client": "parcel build client/src/index.html --out-dir client/dist",
+    "start-client": "npm run build && live-server client/dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.21.0",
+    "@babel/plugin-proposal-class-properties": "7.18.6",
+    "express": "^4.16.4",
+    "live-server": "^1.2.2",
+    "parcel-bundler": "^1.12.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "request": "2.88.2"
+  },
+  "devDependencies": {
+    "cssnano": "^5.1.15",
+    "nodemon": "^1.18.9",
+    "postcss": "^8.4.21",
+    "process": "^0.11.10"
+  }
+}
